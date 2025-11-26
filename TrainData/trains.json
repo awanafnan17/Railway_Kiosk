@@ -1,0 +1,51 @@
+[
+  {
+    "TrainNumber": "OM-101",
+    "Destination": "Muscat",
+    "DepartureTime": "2025-11-27T08:00:00",
+    "TrainType": "High Speed",
+    "Status": "On Time"
+  },
+  {
+    "TrainNumber": "OM-102",
+    "Destination": "Sohar",
+    "DepartureTime": "2025-11-27T10:30:00",
+    "TrainType": "InterCity",
+    "Status": "On Time"
+  },
+  {
+    "TrainNumber": "OM-103",
+    "Destination": "Salalah",
+    "DepartureTime": "2025-11-27T14:00:00",
+    "TrainType": "Express",
+    "Status": "Delayed"
+  },
+  {
+    "TrainNumber": "OM-104",
+    "Destination": "Nizwa",
+    "DepartureTime": "2025-11-27T16:45:00",
+    "TrainType": "Regional",
+    "Status": "On Time"
+  },
+  {
+    "TrainNumber": "OM-105",
+    "Destination": "Duqm",
+    "DepartureTime": "2025-11-27T19:00:00",
+    "TrainType": "Freight/Passenger",
+    "Status": "On Time"
+  },
+  {
+    "TrainNumber": "OM-106",
+    "Destination": "Sur",
+    "DepartureTime": "2025-11-27T21:15:00",
+    "TrainType": "Regional",
+    "Status": "On Time"
+  },
+  {
+    "TrainNumber": "OM-107",
+    "Destination": "Buraimi",
+    "DepartureTime": "2025-11-27T23:00:00",
+    "TrainType": "InterCity",
+    "Status": "Cancelled"
+  }
+]

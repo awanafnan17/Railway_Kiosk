@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Target the Windows desktop platform and enable WinForms support -->
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <!-- Reference the Guna2 UI library for a modern looking interface, the
+       System.Text.Json library for reading the train schedule, and System.Speech
+       for the text‑to‑speech API. These packages will need to be restored via
+       NuGet in Visual Studio. -->
+  <ItemGroup>
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
+    <PackageReference Include="System.Text.Json" Version="7.0.2" />
+    <PackageReference Include="System.Speech" Version="6.0.0" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="RailwayKiosk.Tests\**" />
+    <EmbeddedResource Remove="RailwayKiosk.Tests\**" />
+    <None Remove="RailwayKiosk.Tests\**" />
+  </ItemGroup>
+
+  <!-- Ensure the train data file is copied to the output directory so that
+       LoadTrains() can locate it at runtime. -->
+  <ItemGroup>
+    <Content Include="TrainData\trains.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

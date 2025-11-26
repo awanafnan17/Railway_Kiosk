@@ -1,0 +1,16 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userprefs
+
+# Logs
+*.log
+Logs/
+
+# User-specific files
+users.json
